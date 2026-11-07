@@ -9,7 +9,7 @@ const firaCode = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Liquidity Pro | Pitch Deck (Seed Round)",
+  title: "Liquidity | Pitch Deck (Seed Round)",
   description:
     "Invest, learn and connect on one platform built for Nigerian markets. Seed Round Investor Pitch Deck for Monekudiego Limited.",
   icons: {

@@ -3,11 +3,11 @@ import { SlideMeta } from "@/types/deck";
 export const SLIDES_DATA: SlideMeta[] = [
   {
     id: 1,
-    label: "Liquidity Pro",
+    label: "Liquidity",
     theme: "dark",
     bg: "#0e1b2e",
     speakerNotes:
-      "Open the presentation with energy and confidence. Introduce Liquidity Pro: Invest, learn and connect on one platform built specifically for Nigerian markets, showcasing The Square mobile community feed.",
+      "Open the presentation with energy and confidence. Introduce Liquidity: Invest, learn and connect on one platform built specifically for Nigerian markets, showcasing The Square mobile community feed.",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const SLIDES_DATA: SlideMeta[] = [
     theme: "dark",
     bg: "#0e1b2e",
     speakerNotes: `TALKING POINTS
-Open with momentum: the market has re-rated sharply and more people are arriving. Then pivot: new participants need a place to learn and trade, which is what Liquidity Pro is built for.
+Open with momentum: the market has re-rated sharply and more people are arriving. Then pivot: new participants need a place to learn and trade, which is what Liquidity is built for.
 Be ready for the follow-up that part of the rise in market value is re-rating of existing stocks, not only new participants. Lead with participation, not market cap.
 
 SOURCES AND HOW TO DESCRIBE THEM
@@ -61,7 +61,7 @@ Illustration: 1% of 30M investors is 300,000 accounts. At ₦1,067 per account p
   },
   {
     id: 7,
-    label: "Why users choose Liquidity Pro",
+    label: "Why users choose Liquidity",
     theme: "dark",
     bg: "#0e1b2e",
     speakerNotes:
@@ -119,14 +119,6 @@ The ₦650M seed covers the plan: spendable cash never falls below ₦218M in th
     theme: "dark",
     bg: "#0e1b2e",
     speakerNotes:
-      "Present the leadership: Walter Uche (Quant Dev/Research), Odeyemi Tobi (Software Engineer), Triumphant Chukwudi Paul (Product & Marketing), Nwawulu Clinton (Legal & Compliance), and Azeez Gbolahan (Chartered Stockbroker & CIS Fellow as Adviser).",
-  },
-  {
-    id: 14,
-    label: "Raising ₦650M seed",
-    theme: "dark",
-    bg: "#0e1b2e",
-    speakerNotes:
-      "The Ask: ₦650M Seed for 25.7% equity at ₦1.88B pre-money valuation (₦2.53B post-money). Capital allocation: ₦100M locked regulatory capital, ₦332M operations to break-even in M41, ₦218M growth reserve.",
+      "Present the leadership: Walter Uche (Quant Dev/Research), Odeyemi Tobi (Software Engineer), Elizabeth Nwaugo (Product Owner), Nwawulu Clinton (Legal & Compliance), and Azeez Gbolahan (Chartered Stockbroker & CIS Fellow as Adviser).",
   },
 ];

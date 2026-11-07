@@ -9,12 +9,12 @@ export default function Slide8UnitEconomics() {
     {
       name: "Trading commission",
       icon: TrendingUp,
-      assumption: "2 trades × ₦50,000 × 1%, of which we keep 50%",
+      assumption: "2 trades × ₦50,000 × 1% (50% broker split)",
       revenue: "₦500",
       pct: "47%",
     },
     {
-      name: "Liquidity Pro subscription",
+      name: "Liquidity subscription",
       icon: Sparkles,
       assumption: "3% of active users convert at ₦10,000/month",
       revenue: "₦300",
@@ -30,7 +30,7 @@ export default function Slide8UnitEconomics() {
     {
       name: "Internal P2P transfers",
       icon: ArrowRightLeft,
-      assumption: "1 internal transfer × ₦100 flat execution fee",
+      assumption: "1 internal transfer × ₦100 flat fee",
       revenue: "₦100",
       pct: "9%",
     },
@@ -59,7 +59,7 @@ export default function Slide8UnitEconomics() {
           </h2>
 
           <p className="font-sans text-[26px] font-normal leading-snug text-muted-foreground max-w-[1250px]">
-            Diverse monetization across trading commissions, pro subscriptions, cash float yield, and transfers creates a robust ₦1,067 blended monthly ARPU.
+            Four revenue streams create a steady ₦1,067 monthly value per active user.
           </p>
         </motion.div>
 
@@ -122,7 +122,7 @@ export default function Slide8UnitEconomics() {
               <span className="font-bold text-muted-foreground text-[22px]">Later: B2B Data Licensing</span>
             </div>
             <div className="text-muted-foreground text-[20px]">
-              Annual institutional API subscriptions at ~₦20M/client from Year 2
+              Institutional API subscriptions at ~₦20M/client/year (starts Year 2)
             </div>
             <div className="text-right italic text-paper font-mono text-[20px]">
               + ₦20M / Client / Yr
@@ -133,7 +133,7 @@ export default function Slide8UnitEconomics() {
         {/* Footer */}
         <div className="flex justify-between items-center text-[20px] text-primary tracking-wide pt-2">
           <span>Base case preliminary. Sponsoring broker 50% split assumed.</span>
-          <div>Liquidity Pro | Confidential</div>
+          <div>Liquidity | Confidential</div>
         </div>
       </div>
     </div>

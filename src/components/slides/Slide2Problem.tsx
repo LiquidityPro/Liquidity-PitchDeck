@@ -16,7 +16,7 @@ export default function Slide2Problem() {
       title: "Slow, Archaic Access",
       subtitle: "Onboarding Friction",
       description:
-        "Lengthy paperwork, legacy broker portals, and physical verification barriers make trading Nigerian equities feel completely out of reach for digitally native Nigerians.",
+        "Paper forms and slow broker verification delay new accounts. Trading remains difficult for mobile users.",
       mockWidget: (
         <div className="mt-4 p-4 rounded-xl bg-background border border-paper/20 flex flex-col gap-2">
           <div className="flex items-center justify-between text-xs">
@@ -43,7 +43,7 @@ export default function Slide2Problem() {
       title: "Noisy, Fragmented Advice",
       subtitle: "The Unregulated Social Echo Chamber",
       description:
-        "Investment ideas are scattered across WhatsApp and Telegram groups. Everyday investors have zero mechanism to separate credible research from conflict-ridden pump-and-dump noise.",
+        "Trading tips spread through unverified chat groups. Retail investors cannot separate real research from market rumors.",
       mockWidget: (
         <div className="mt-4 p-4 rounded-xl bg-background border border-bear/20 flex flex-col gap-2">
           <div className="bg-bear/10 p-2.5 rounded-lg border border-bear/20 text-xs">
@@ -69,7 +69,7 @@ export default function Slide2Problem() {
       title: "The Data Black Hole",
       subtitle: "The Institutional Blindspot",
       description:
-        "Asset managers and institutional desks have zero visibility into real-time retail capital allocation or retail sentiment across Nigeria's fast-growing investor base.",
+        "Asset managers lack real-time data on retail sentiment and retail capital flow across Nigerian equities.",
       mockWidget: (
         <div className="mt-4 p-4 rounded-xl bg-background border border-border flex flex-col gap-2 font-mono text-xs">
           <div className="flex justify-between items-center text-muted-foreground">
@@ -110,7 +110,7 @@ export default function Slide2Problem() {
           </h2>
 
           <p className="font-sans text-[26px] font-normal leading-snug text-muted-foreground max-w-[1250px]">
-            The market returned +51.2% in 2025, but everyday participants face painful barriers to entry, predatory noise, and zero actionable transparency.
+            The NGX gained +51.2% in 2025. Yet retail traders face slow access, unverified rumors, and missing data.
           </p>
         </motion.div>
 
@@ -174,11 +174,11 @@ export default function Slide2Problem() {
           <div className="flex items-center gap-4 text-[22px] font-medium text-foreground">
             <ShieldAlert className="w-6 h-6 text-paper flex-shrink-0" />
             <span>
-              <strong>The Consequence:</strong> Retail capital remains on the sidelines or burns out on speculative noise—leaving Nigerians disconnected from their own economic expansion.
+              <strong>The Result:</strong> Retail investors lose capital to unverified tips or stay out of the market completely.
             </span>
           </div>
           <div className="text-[20px] font-normal text-primary tracking-wide flex-shrink-0 ml-8">
-            Liquidity Pro | Confidential
+            Liquidity | Confidential
           </div>
         </motion.div>
       </div>

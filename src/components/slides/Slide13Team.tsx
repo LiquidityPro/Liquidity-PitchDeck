@@ -10,7 +10,7 @@ export default function Slide13Team() {
     {
       name: "Walter Uche",
       role: "Quantitative Developer & Researcher",
-      experience: "Architecture & Algorithmic Trading Systems",
+      experience: "Algorithmic trading systems and architecture",
       status: "Full Time",
       statusColor: "bg-primary/15 text-primary border-primary/40",
       avatar: "Walter Uche",
@@ -24,17 +24,17 @@ export default function Slide13Team() {
       avatar: "Odeyemi Tobi",
     },
     {
-      name: "Triumphant Chukwudi Paul",
-      role: "Product Manager & Growth",
-      experience: "5+ years in fintech growth & community retention",
+      name: "Elizabeth Nwaugo",
+      role: "Product Owner",
+      experience: "2+ years in fintech growth at Wema Bank",
       status: "Full Time",
       statusColor: "bg-primary/15 text-primary border-primary/40",
-      avatar: "Triumphant Chukwudi Paul",
+      avatar: "Elizabeth Nwaugo",
     },
     {
       name: "Nwawulu Clinton",
       role: "Legal & Regulatory Compliance",
-      experience: "Corporate Governance & SEC Regulatory Filings",
+      experience: "Corporate governance and SEC regulatory filings",
       status: "Full Time",
       statusColor: "bg-primary/15 text-primary border-primary/40",
       avatar: "Nwawulu Clinton",
@@ -63,7 +63,7 @@ export default function Slide13Team() {
           <div className="inline-flex items-center gap-2.5 px-3 py-1 rounded-md label-mono bg-primary/10 border border-primary/30 w-fit">
             <Users2 className="w-4 h-4 text-primary animate-pulse" />
             <span className="font-sans text-[16px] font-bold text-primary tracking-wider uppercase">
-              LEADERSHIP &amp; GOVERNANCE • DOMAIN EXPERTISE
+              LEADERSHIP • DOMAIN EXPERTISE
             </span>
           </div>
 
@@ -72,7 +72,7 @@ export default function Slide13Team() {
           </h2>
 
           <p className="font-sans text-[26px] font-normal leading-snug text-muted-foreground max-w-[1250px]">
-            Deep domain synergy combining quantitative engineering, high-throughput consumer app scalability, and institutional capital market regulatory experience.
+            Leadership across quantitative systems, software engineering, product growth, and capital market regulation.
           </p>
         </motion.div>
 
@@ -129,29 +129,24 @@ export default function Slide13Team() {
           ))}
         </div>
 
-        {/* Ownership & Traction Bottom Dock */}
+        {/* Traction Bottom Dock */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="grid grid-cols-2 gap-8 px-10 py-5 rounded-lg border-2 border-border bg-muted/40"
+          className="flex items-center justify-between px-10 py-5 rounded-lg border-2 border-border bg-muted/40"
         >
-          <div className="flex items-center gap-4 text-[21px] text-foreground">
+          <div className="flex items-center gap-4 text-[22px] text-foreground">
             <span className="px-3 py-1 rounded-full bg-primary/15 text-primary text-xs font-mono font-bold uppercase">
-              CAP TABLE
+              PRE-LAUNCH TRACTION
             </span>
             <span>
-              <strong>Ownership Today:</strong> Walter Uche 94% &nbsp;|&nbsp; Azeez Gbolahan 5% &nbsp;|&nbsp; Odeyemi Tobi 1%
+              <strong>Launch Targets:</strong> 1,000 Waitlist Sign-ups &nbsp;|&nbsp; 100 Beta Traders &nbsp;|&nbsp; 2 Sponsoring Brokers
             </span>
           </div>
 
-          <div className="flex items-center gap-4 text-[21px] text-foreground justify-end">
-            <span className="px-3 py-1 rounded-full bg-paper/15 text-paper text-xs font-mono font-bold uppercase">
-              TRACTION
-            </span>
-            <span>
-              <strong>Launch Targets:</strong> 1,000 Waitlist &nbsp;|&nbsp; 100 Beta Traders &nbsp;|&nbsp; 2 Sponsoring Brokers
-            </span>
+          <div className="text-[20px] font-normal text-primary tracking-wide">
+            Liquidity | Confidential
           </div>
         </motion.div>
       </div>

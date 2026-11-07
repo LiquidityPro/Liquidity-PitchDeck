@@ -14,10 +14,10 @@ export default function Slide9GTM() {
       badgeColor: "bg-paper/15 text-paper border-paper/40",
       accent: "from-paper/25 to-transparent",
       points: [
-        "SEC digital sub-broker registration filing in progress",
-        "1,000 retail waitlist sign-ups target",
-        "100 beta power users active in The Square",
-        "2 sponsoring broker-dealer partnerships",
+        "Submit SEC digital sub-broker registration",
+        "Build 1,000-user retail waitlist",
+        "Onboard 100 beta testers in The Square",
+        "Partner with 2 sponsoring brokers",
       ],
     },
     {
@@ -28,10 +28,10 @@ export default function Slide9GTM() {
       badgeColor: "bg-primary/15 text-primary border-primary/40",
       accent: "from-primary/25 to-transparent",
       points: [
-        "450 new funded accounts in Month 1, compounding 4.8% MoM",
-        "Chartered analysts bring their existing followers",
-        "6,123 funded active accounts reached by Month 12",
-        "₦2,500 blended initial customer acquisition cost (CAC)",
+        "Launch with 450 funded accounts (+4.8% monthly)",
+        "Analysts bring their existing audiences",
+        "Reach 6,123 funded accounts by Month 12",
+        "Maintain low ₦2,500 initial acquisition cost",
       ],
     },
     {
@@ -42,10 +42,10 @@ export default function Slide9GTM() {
       badgeColor: "bg-primary/10 text-primary border-primary/40",
       accent: "from-primary/20 to-transparent",
       points: [
-        "15,000 accounts by Month 24; scaling to 56,375 by Year 5",
-        "Customer acquisition cost normalizes to ₦6,000 at scale",
-        "First B2B market sentiment API clients onboarded in Year 2",
-        "Lean team of 10 achieves break-even by Month 41",
+        "Scale to 15,000 accounts by Month 24, and 56,375 by Year 5",
+        "Normalize acquisition cost to ₦6,000 at scale",
+        "Launch B2B market data licenses in Year 2",
+        "Reach profitability in Month 41 with a team of 10",
       ],
     },
   ];
@@ -73,7 +73,7 @@ export default function Slide9GTM() {
           </h2>
 
           <p className="font-sans text-[26px] font-normal leading-snug text-muted-foreground max-w-[1250px]">
-            A disciplined, analyst-led acquisition flywheel that drives low CAC initially, scaling into profitable institutional B2B data licensing.
+            Analysts drive initial retail adoption at low cost. B2B data licensing adds high-margin revenue.
           </p>
         </motion.div>
 
@@ -134,11 +134,11 @@ export default function Slide9GTM() {
               DISTRIBUTION
             </span>
             <span>
-              <strong>Primary Acquisition Channels:</strong> Verified analyst followings, investor WhatsApp/Telegram community partnerships, and word-of-mouth referral viral loops.
+              <strong>Primary Channels:</strong> Analyst audiences, investment chat communities, and user referrals.
             </span>
           </div>
           <div className="text-[20px] font-normal text-primary tracking-wide flex-shrink-0 ml-8">
-            Liquidity Pro | Confidential
+            Liquidity | Confidential
           </div>
         </motion.div>
       </div>

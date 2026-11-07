@@ -10,28 +10,28 @@ export default function Slide6Comparison() {
       name: "Bamboo",
       type: "Brokerage",
       focus: "Nigerian & US stocks. SEC-registered.",
-      community: "Static learning articles & most-owned stocks list. Zero social feed.",
+      community: "Articles and stock lists. No social discussion feed.",
       hasCommunity: false,
     },
     {
       name: "Chaka (Hisa)",
       type: "Brokerage",
       focus: "Nigerian stocks & ETFs. Flat 1% commission.",
-      community: "Atlas in-app research & automated investing. No community features.",
+      community: "Automated research tools. No community features.",
       hasCommunity: false,
     },
     {
       name: "Rise",
       type: "Asset Manager",
-      focus: "US dollar asset manager, not a self-directed broker.",
-      community: "Expert-managed portfolios. No social interaction or trader debate.",
+      focus: "US dollar asset manager. Managed portfolios only.",
+      community: "Managed funds. No trader interaction.",
       hasCommunity: false,
     },
     {
       name: "Trove",
       type: "Brokerage",
-      focus: "Equities, bonds, ETFs & treasury bills.",
-      community: "Trove Social (shows friends' holdings) & Trove University. Closest rival.",
+      focus: "Equities, bonds, and ETFs.",
+      community: "Shows friend holdings. No public debate feed.",
       hasCommunity: "limited",
     },
   ];
@@ -59,7 +59,7 @@ export default function Slide6Comparison() {
           </h2>
 
           <p className="font-sans text-[26px] font-normal leading-snug text-muted-foreground max-w-[1250px]">
-            Other fintechs treat social and research as an afterthought. We built the core trading experience around verified alpha and transparent discussion.
+            Competitors separate trading from research. We combine direct trading with verified discussion.
           </p>
         </motion.div>
 
@@ -121,7 +121,7 @@ export default function Slide6Comparison() {
                   OUR UNFAIR MOAT
                 </span>
                 <p className="font-sans text-[26px] font-medium leading-snug text-foreground">
-                  A discussion-first Town Square for Nigerian equities, led by verified analysts who disclose actual skin-in-the-game positions.
+                  A discussion platform for Nigerian stocks where verified analysts must disclose real portfolio holdings.
                 </p>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function Slide6Comparison() {
         {/* Footer */}
         <div className="flex justify-between items-center text-[20px] text-primary tracking-wide pt-2">
           <span>Targeting everyday retail + institutional sentiment consumers</span>
-          <div>Liquidity Pro | Confidential</div>
+          <div>Liquidity | Confidential</div>
         </div>
       </div>
     </div>

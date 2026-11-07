@@ -12,7 +12,7 @@ export default function Slide12TrustSecurity() {
       badge: "C • Rust • TypeScript",
       title: "Fast, Auditable Core",
       subtitle: "Proprietary Ledger Engine",
-      desc: "Built on an immutable double-entry ledger engineered for sub-millisecond execution, audit readiness, and zero balance discrepancies.",
+      desc: "Double-entry ledger with sub-millisecond execution and complete audit tracking.",
       accent: "from-primary/20 to-transparent",
       color: "text-primary",
     },
@@ -22,7 +22,7 @@ export default function Slide12TrustSecurity() {
       badge: "SEC Registration In Progress",
       title: "Designed for Regulation",
       subtitle: "Digital Sub-Broker Framework",
-      desc: "Architected to operate under the SEC digital sub-broker regime in partnership with established, licensed sponsoring broker-dealers.",
+      desc: "Operates under SEC digital sub-broker rules with licensed sponsoring broker partners.",
       accent: "from-paper/20 to-transparent",
       color: "text-paper",
     },
@@ -32,7 +32,7 @@ export default function Slide12TrustSecurity() {
       badge: "Daily Bank Reconciliation",
       title: "Client Fund Protection",
       subtitle: "Strict Ring-Fenced Custody",
-      desc: "Client cash and securities are held strictly segregated from corporate operations, with automated daily custodial reconciliation.",
+      desc: "Client funds stay in segregated accounts with automated daily custodial reconciliation.",
       accent: "from-primary/15 to-transparent",
       color: "text-primary",
     },
@@ -42,7 +42,7 @@ export default function Slide12TrustSecurity() {
       badge: "NDPA & Anti-Money Laundering",
       title: "Responsible Community",
       subtitle: "Verified Identity & Content",
-      desc: "Integrated Tier-3 biometric KYC/AML controls, NDPA-aligned data sovereignty, and automated moderation to eliminate market manipulation.",
+      desc: "Tier-3 biometric KYC, NDPA data compliance, and automated spam moderation.",
       accent: "from-primary/15 to-transparent",
       color: "text-muted-foreground",
     },
@@ -71,7 +71,7 @@ export default function Slide12TrustSecurity() {
           </h2>
 
           <p className="font-sans text-[26px] font-normal leading-snug text-muted-foreground max-w-[1250px]">
-            Institutional-grade architecture designed from Day 1 for regulatory compliance, audited fund segregation, and resilient performance.
+            Institutional architecture designed for SEC compliance, segregated funds, and resilient performance.
           </p>
         </motion.div>
 
@@ -134,11 +134,11 @@ export default function Slide12TrustSecurity() {
           <div className="flex items-center gap-4">
             <FileCheck2 className="w-6 h-6 text-primary flex-shrink-0" />
             <span>
-              <strong>Compliance First:</strong> Partnering with top-tier registered brokers ensures direct CSCS clearing and SEC-standard client protection.
+              <strong>Compliance First:</strong> Partnering with licensed brokers guarantees CSCS clearing and strict investor protection.
             </span>
           </div>
           <div className="text-[20px] font-normal text-primary tracking-wide flex-shrink-0 ml-8">
-            Liquidity Pro | Confidential
+            Liquidity | Confidential
           </div>
         </motion.div>
       </div>

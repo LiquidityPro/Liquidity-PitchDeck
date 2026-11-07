@@ -40,7 +40,7 @@ export default function Slide3Solution() {
           </h2>
 
           <p className="font-sans text-[26px] font-normal leading-snug text-muted-foreground max-w-[1250px]">
-            Liquidity Pro bridges low-latency equities execution with The Square—giving everyday Nigerians the tools to trade and the community to learn where they invest.
+            Liquidity combines stock trading with The Square. Investors trade equities and learn from verified analysts in one app.
           </p>
         </motion.div>
 
@@ -76,7 +76,7 @@ export default function Slide3Solution() {
               </div>
 
               <p className="font-sans text-[21px] font-normal leading-[1.45] text-foreground/85">
-                Buy and sell Nigerian equities from your phone in seconds. 5-minute digital onboarding, real-time portfolio valuation, and direct CSCS custody.
+                Buy and sell Nigerian equities on your phone. Features 5-minute digital onboarding, live portfolio tracking, and direct CSCS custody.
               </p>
             </div>
 
@@ -133,7 +133,7 @@ export default function Slide3Solution() {
               </div>
 
               <p className="font-sans text-[21px] font-normal leading-[1.45] text-foreground/85">
-                A live feed where verified stockbrokers, chartered analysts, and retail traders share ideas, debate earnings, and disclose real portfolio positions.
+                A live feed where verified brokers and analysts share stock ideas, review earnings, and disclose real portfolio holdings.
               </p>
             </div>
 
@@ -189,7 +189,7 @@ export default function Slide3Solution() {
                 </span>
               </div>
               <p className="font-sans text-[18px] text-muted-foreground leading-snug">
-                Fast, sub-second peer-to-peer balance transfers between verified accounts with flat ₦100 settlement.
+                Send money between verified accounts in seconds with a flat ₦100 settlement fee.
               </p>
             </div>
           </motion.div>
@@ -215,7 +215,7 @@ export default function Slide3Solution() {
                 </span>
               </div>
               <p className="font-sans text-[18px] text-muted-foreground leading-snug">
-                Monetizing anonymized retail sentiment, ticker buzz, and flow telemetry for institutional asset managers at ₦20M/yr.
+                Sell anonymized retail sentiment and trading flow data to institutional funds at ₦20M per year.
               </p>
             </div>
           </motion.div>
@@ -225,9 +225,9 @@ export default function Slide3Solution() {
         <div className="flex justify-between items-center text-[20px] text-primary tracking-wide pt-2">
           <div className="flex items-center gap-2">
             <CheckCircle2 className="w-5 h-5" />
-            <span>Dual Monetization: Consumer Trading Commission + Institutional Data Licensing</span>
+            <span>Two Revenue Sources: Retail trading commissions + Institutional data licensing</span>
           </div>
-          <div>Liquidity Pro | Confidential</div>
+          <div>Liquidity | Confidential</div>
         </div>
       </div>
     </div>

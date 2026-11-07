@@ -14,7 +14,6 @@ import Slide10RevenueOutlook from "@/components/slides/Slide10RevenueOutlook";
 import Slide11Financials from "@/components/slides/Slide11Financials";
 import Slide12TrustSecurity from "@/components/slides/Slide12TrustSecurity";
 import Slide13Team from "@/components/slides/Slide13Team";
-import Slide14TheAsk from "@/components/slides/Slide14TheAsk";
 
 interface SlideRendererProps {
   slideId: number;
@@ -48,8 +47,6 @@ export default function SlideRenderer({ slideId }: SlideRendererProps) {
       return <Slide12TrustSecurity />;
     case 13:
       return <Slide13Team />;
-    case 14:
-      return <Slide14TheAsk />;
     default:
       return <Slide1Cover />;
   }

@@ -82,7 +82,7 @@ export default function Slide10RevenueOutlook() {
           </h2>
 
           <p className="font-sans text-[26px] font-normal leading-snug text-muted-foreground max-w-[1250px]">
-            EBITDA turns cash positive in Month 41 with a lean team of 10. The ₦650M seed round fully finances the pathway to profitable sustainability.
+            EBITDA becomes positive in Month 41 with a team of 10. The ₦650M seed funds operations through profitability.
           </p>
         </motion.div>
 
@@ -148,7 +148,7 @@ export default function Slide10RevenueOutlook() {
 
             {/* Assumptions Footnote */}
             <div className="p-6 bg-muted/30 border-t border-border text-[18px] text-muted-foreground leading-snug">
-              Assumes 50% commission retention after sponsoring broker share, B2B API licensing commencing in Year 2, and 10 FTE by Year 5.
+              Assumes 50% broker commission share, B2B data revenue from Year 2, and 10 full-time staff by Year 5.
             </div>
           </motion.div>
 
@@ -236,7 +236,7 @@ export default function Slide10RevenueOutlook() {
         {/* Footer */}
         <div className="flex justify-between items-center text-[20px] text-primary tracking-wide pt-2">
           <span>The ₦650M seed funds the entire trajectory through break-even</span>
-          <div>Liquidity Pro | Confidential</div>
+          <div>Liquidity | Confidential</div>
         </div>
       </div>
     </div>

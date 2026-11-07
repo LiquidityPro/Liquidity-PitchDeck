@@ -9,7 +9,7 @@ export default function Slide5TAM() {
     {
       num: "30M",
       tag: "TAM • 2030 TARGET",
-      label: "Retail investors targeted by 2030 under the proposed NGX Capital Market Master Plan.",
+      label: "Target retail investors by 2030 under the proposed NGX master plan.",
       color: "text-primary",
       border: "border-primary/30",
       bg: "bg-primary/10",
@@ -18,7 +18,7 @@ export default function Slide5TAM() {
     {
       num: "2.7M",
       tag: "SAM • ACTIVE TODAY",
-      label: "Active retail investor accounts reported today—a 13-fold increase over the past 3 years.",
+      label: "Active retail accounts reported today (up 13x over the past 3 years).",
       color: "text-paper",
       border: "border-paper/30",
       bg: "bg-paper/10",
@@ -27,7 +27,7 @@ export default function Slide5TAM() {
     {
       num: "56,375",
       tag: "SOM • YEAR 5 BASE CASE",
-      label: "Our Year 5 target: captures just ~2.1% of today's active pool, generating ₦854M revenue.",
+      label: "Our Year 5 target: captures 2.1% of active accounts, generating ₦854M revenue.",
       color: "text-foreground",
       border: "border-primary/50",
       bg: "bg-primary/15",
@@ -58,7 +58,7 @@ export default function Slide5TAM() {
           </h2>
 
           <p className="font-sans text-[26px] font-normal leading-snug text-muted-foreground max-w-[1250px]">
-            We do not need aggressive market dominance. Capturing just a sliver of Nigeria’s accelerating equity expansion creates a highly profitable business.
+            We do not need large market share. Capturing a small fraction of active traders creates a profitable business.
           </p>
         </motion.div>
 
@@ -136,7 +136,7 @@ export default function Slide5TAM() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="p-5 rounded-md border-2 border-primary bg-primary/10 text-[22px] text-foreground leading-snug"
             >
-              <strong className="text-primary">The 1% Math:</strong> Capturing just 1% of the 30M market (300,000 accounts) at ₦1,067/account/month yields <strong className="text-foreground">₦3.8B in annual recurring revenue</strong>.
+              <strong className="text-primary">The 1% Math:</strong> Capturing 1% of the 30M target market (300,000 accounts) at ₦1,067/month yields <strong className="text-foreground">₦3.8B in annual recurring revenue</strong>.
             </motion.div>
           </div>
         </div>
@@ -144,7 +144,7 @@ export default function Slide5TAM() {
         {/* Footer */}
         <div className="flex justify-between items-center text-[20px] text-primary tracking-wide pt-2">
           <span>Targeting ~2.1% of existing active accounts by Year 5</span>
-          <div>Liquidity Pro | Confidential</div>
+          <div>Liquidity | Confidential</div>
         </div>
       </div>
     </div>

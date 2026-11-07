@@ -43,7 +43,7 @@ export default function DeckControls({
   onPrint,
 }: DeckControlsProps) {
   return (
-    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-1 px-2 py-1.5 bg-card border border-border rounded-lg text-foreground select-none">
+    <div className="fixed top-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-1 px-2.5 py-1.5 bg-card/90 backdrop-blur-md border border-border rounded-full text-foreground select-none shadow-2xl">
       {/* Prev */}
       <button
         onClick={onPrev}

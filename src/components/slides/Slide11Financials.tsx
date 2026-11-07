@@ -9,7 +9,7 @@ export default function Slide11Financials() {
 
   const revenueRows = [
     { name: "Net trading commission", vals: ["17.5", "61.5", "124.8", "203.1", "290.6"] },
-    { name: "Liquidity Pro subscriptions", vals: ["10.5", "36.9", "74.9", "121.8", "174.4"] },
+    { name: "Liquidity subscriptions", vals: ["10.5", "36.9", "74.9", "121.8", "174.4"] },
     { name: "Yield on client cash float", vals: ["5.8", "20.5", "41.6", "67.7", "96.9"] },
     { name: "Internal transfer fees", vals: ["3.5", "12.3", "25.0", "40.6", "58.1"] },
     { name: "B2B API licensing", vals: ["—", "21.7", "72.5", "143.3", "234.2"] },
@@ -45,7 +45,7 @@ export default function Slide11Financials() {
           </h2>
 
           <p className="font-sans text-[26px] font-normal leading-snug text-muted-foreground max-w-[1250px]">
-            Base case model under a ₦650M seed round. Spendable cash reserves never drop below ₦218M across the entire path to profitability.
+            Base case model with ₦650M seed. Spendable cash balance stays above ₦218M until profitable.
           </p>
         </motion.div>
 
@@ -98,7 +98,7 @@ export default function Slide11Financials() {
 
           {/* Payroll */}
           <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-2.5 items-center text-[20px] text-muted-foreground border-b border-border/70">
-            <div>Payroll (Scaling from 4 to 10 FTE)</div>
+            <div>Payroll (4 to 10 staff)</div>
             {payroll.map((v, i) => (
               <div key={i} className="text-right font-mono">{v}</div>
             ))}
@@ -106,7 +106,7 @@ export default function Slide11Financials() {
 
           {/* Opex */}
           <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-2.5 items-center text-[20px] text-muted-foreground border-b border-border">
-            <div>Marketing, Cloud Infrastructure &amp; G&amp;A</div>
+            <div>Marketing, Cloud &amp; G&amp;A</div>
             {opex.map((v, i) => (
               <div key={i} className="text-right font-mono">{v}</div>
             ))}
@@ -114,7 +114,7 @@ export default function Slide11Financials() {
 
           {/* EBITDA Row */}
           <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-3.5 items-center text-[24px] font-extrabold bg-muted/40 border-b border-border">
-            <div>EBITDA (Break-Even Month 41)</div>
+            <div>EBITDA (Month 41 break-even)</div>
             {ebitda.map((v, i) => (
               <div
                 key={i}
@@ -138,8 +138,8 @@ export default function Slide11Financials() {
 
         {/* Footer */}
         <div className="flex justify-between items-center text-[20px] text-primary tracking-wide pt-2">
-          <span>₦100M locked regulatory capital excluded from spendable cash. EBITDA turns positive in Month 41.</span>
-          <div>Liquidity Pro | Confidential</div>
+          <span>Excludes ₦100M locked regulatory capital. EBITDA becomes positive in Month 41.</span>
+          <div>Liquidity | Confidential</div>
         </div>
       </div>
     </div>

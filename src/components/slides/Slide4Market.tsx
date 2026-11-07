@@ -11,15 +11,15 @@ export default function Slide4Market() {
     },
     {
       value: "₦157T",
-      label: "Equity market value in August 2026, up from ₦62.7T at end-2024",
+      label: "Market value in August 2026 (from ₦62.7T in 2024)",
     },
     {
       value: "2.7M",
-      label: "Active retail investors, a reported 13-fold rise in three years",
+      label: "Active retail accounts (up 13x in three years)",
     },
     {
       value: "30M",
-      label: "Retail investors targeted by 2030 under a proposed master plan",
+      label: "Proposed NGX retail target by 2030",
     },
   ];
 
@@ -68,13 +68,13 @@ export default function Slide4Market() {
             THE UPSIDE
           </div>
           <p className="font-sans text-[30px] font-normal leading-[1.35] text-foreground">
-            NGX management has set a target of ₦230T equity market value by end-2026, from about ₦157T in August. More participants are arriving, and they need a place to learn and trade.
+            The NGX targets ₦230T in market value by end-2026. New participants need a dedicated platform to learn and trade.
           </p>
         </motion.div>
 
         {/* Footer */}
         <div className="text-[24px] font-normal text-primary tracking-wide">
-          Liquidity Pro | Confidential
+          Liquidity | Confidential
         </div>
       </div>
     </div>

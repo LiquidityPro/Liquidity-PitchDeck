@@ -11,7 +11,7 @@ export default function Slide7WhyChoose() {
       tag: "COMMUNITY-FIRST",
       title: "Learn Together",
       subtitle: "Execute Where You Discuss",
-      desc: "Debate tickers, dissect earnings announcements, and share trading rationales in the exact same platform where your order book lives.",
+      desc: "Discuss stocks, review earnings updates, and place trades in the same application.",
       color: "text-primary",
       accent: "from-primary/20 to-transparent",
     },
@@ -20,7 +20,7 @@ export default function Slide7WhyChoose() {
       tag: "VERIFIED ALIGNMENT",
       title: "Trusted Voices",
       subtitle: "Mandatory Skin-In-The-Game",
-      desc: "Chartered analysts and thought leaders are verified and required to disclose their live portfolio holdings, eliminating covert pump-and-dump incentives.",
+      desc: "Verified analysts must disclose live holdings. This removes fake tips and market manipulation.",
       color: "text-paper",
       accent: "from-paper/20 to-transparent",
     },
@@ -29,7 +29,7 @@ export default function Slide7WhyChoose() {
       tag: "LOCALIZED ARCHITECTURE",
       title: "Built for Nigeria",
       subtitle: "Tailored to Local Trading Culture",
-      desc: "Designed around how Nigerians naturally invest—integrating instant NGN transfers, local broker clearing, and community sentiment on NGX-listed names.",
+      desc: "Built for local habits: instant NGN funding, local broker clearing, and NGX ticker discussions.",
       color: "text-primary",
       accent: "from-primary/15 to-transparent",
     },
@@ -54,11 +54,11 @@ export default function Slide7WhyChoose() {
           </div>
 
           <h2 className="font-sans text-[76px] font-extrabold leading-[1.05] text-foreground tracking-tight">
-            Why users choose <span className="text-primary">Liquidity Pro.</span>
+            Why users choose <span className="text-primary">Liquidity.</span>
           </h2>
 
           <p className="font-sans text-[26px] font-normal leading-snug text-muted-foreground max-w-[1250px]">
-            Others add community features as a gimmick to a trading app. We built the whole product around verified, high-conviction discussion.
+            Other apps add social features as an extra. We built our product around verified discussion.
           </p>
         </motion.div>
 
@@ -121,12 +121,12 @@ export default function Slide7WhyChoose() {
                 INVESTOR SURVEY VALIDATION • TARGET: 100 NIGERIAN RETAIL TRADERS
               </span>
               <p className="font-sans text-[22px] font-medium text-foreground mt-0.5">
-                Hypothesis Test: <strong className="text-primary">≥60%</strong> currently learn about stocks via WhatsApp/Telegram &nbsp;|&nbsp; <strong className="text-primary">≥40%</strong> explicitly demand a verified in-app community.
+                Target (100 Retail Traders): <strong className="text-primary">≥60%</strong> learn from chat groups &nbsp;|&nbsp; <strong className="text-primary">≥40%</strong> demand an integrated, verified trading community.
               </p>
             </div>
           </div>
           <div className="text-[20px] font-normal text-primary tracking-wide flex-shrink-0 ml-8">
-            Liquidity Pro | Confidential
+            Liquidity | Confidential
           </div>
         </motion.div>
       </div>
