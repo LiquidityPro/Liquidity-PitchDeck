@@ -37,10 +37,7 @@ export default function Slide8UnitEconomics() {
   ];
 
   return (
-    <div className="w-[1920px] h-[1080px] relative bg-[#0e1b2e] overflow-hidden select-none">
-      {/* Ambient Glow */}
-      <div className="absolute -top-32 left-32 w-[650px] h-[650px] bg-[#1fa97a]/15 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute -bottom-32 right-32 w-[650px] h-[650px] bg-[#e0b04a]/12 rounded-full blur-[140px] pointer-events-none" />
+    <div className="w-[1920px] h-[1080px] relative bg-background text-foreground overflow-hidden select-none grid-floor">
 
       <div className="flex flex-col justify-between w-full h-full p-28 box-border relative z-10">
         {/* Header */}
@@ -50,18 +47,18 @@ export default function Slide8UnitEconomics() {
           transition={{ duration: 0.6 }}
           className="flex flex-col gap-4"
         >
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#1fa97a]/15 border border-[#1fa97a]/30 w-fit">
-            <DollarSign className="w-4 h-4 text-[#1fa97a] animate-pulse" />
-            <span className="font-sans text-[16px] font-bold text-[#1fa97a] tracking-wider uppercase">
+          <div className="inline-flex items-center gap-2.5 px-3 py-1 rounded-md label-mono bg-primary/10 border border-primary/30 w-fit">
+            <DollarSign className="w-4 h-4 text-primary animate-pulse" />
+            <span className="font-sans text-[16px] font-bold text-primary tracking-wider uppercase">
               UNIT ECONOMICS • MONTHLY VALUE PER ACTIVE USER
             </span>
           </div>
 
-          <h2 className="font-sans text-[76px] font-extrabold leading-[1.05] text-[#f4f1ea] tracking-tight">
-            Unit economics per <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1fa97a] via-[#e0b04a] to-[#f4f1ea]">active user.</span>
+          <h2 className="font-sans text-[76px] font-extrabold leading-[1.05] text-foreground tracking-tight">
+            Unit economics per <span className="text-primary">active user.</span>
           </h2>
 
-          <p className="font-sans text-[26px] font-normal leading-snug text-[#f4f1ea]/70 max-w-[1250px]">
+          <p className="font-sans text-[26px] font-normal leading-snug text-muted-foreground max-w-[1250px]">
             Diverse monetization across trading commissions, pro subscriptions, cash float yield, and transfers creates a robust ₦1,067 blended monthly ARPU.
           </p>
         </motion.div>
@@ -71,10 +68,10 @@ export default function Slide8UnitEconomics() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="my-auto bg-[#132238]/85 backdrop-blur-xl rounded-3xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden"
+          className="my-auto bg-card rounded-lg border border-border overflow-hidden"
         >
           {/* Table Header */}
-          <div className="grid grid-cols-[380px_1fr_260px] bg-white/5 px-10 py-5 border-b border-white/10 text-[20px] font-bold text-white/60 uppercase tracking-wider font-mono">
+          <div className="grid grid-cols-[380px_1fr_260px] bg-muted/40 px-10 py-5 border-b border-border text-[20px] font-bold text-muted-foreground uppercase tracking-wider font-mono">
             <div>Revenue Stream</div>
             <div>Base-Case Assumption</div>
             <div className="text-right">Per Month</div>
@@ -86,55 +83,55 @@ export default function Slide8UnitEconomics() {
             return (
               <div
                 key={s.name}
-                className="grid grid-cols-[380px_1fr_260px] px-10 py-5 items-center text-[23px] border-b border-white/10 hover:bg-white/[0.03] transition-colors"
+                className="grid grid-cols-[380px_1fr_260px] px-10 py-5 items-center text-[23px] border-b border-border hover:bg-muted/40 transition-colors"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-[#1fa97a]">
+                  <div className="w-10 h-10 rounded-xl bg-muted/40 border border-border flex items-center justify-center text-primary">
                     <Icon className="w-5 h-5" />
                   </div>
-                  <span className="font-bold text-[#f4f1ea] text-[24px]">{s.name}</span>
+                  <span className="font-bold text-foreground text-[24px]">{s.name}</span>
                 </div>
-                <div className="text-[#f4f1ea]/80 leading-snug">{s.assumption}</div>
+                <div className="text-foreground/85 leading-snug">{s.assumption}</div>
                 <div className="text-right flex items-center justify-end gap-3">
-                  <span className="text-xs font-mono text-white/50 px-2 py-0.5 rounded bg-white/5">{s.pct}</span>
-                  <span className="font-extrabold text-[#f4f1ea] text-[28px] font-mono">{s.revenue}</span>
+                  <span className="text-xs font-mono text-muted-foreground px-2 py-0.5 rounded bg-muted/40">{s.pct}</span>
+                  <span className="font-extrabold text-foreground text-[28px] font-mono">{s.revenue}</span>
                 </div>
               </div>
             );
           })}
 
           {/* Highlight Total Row */}
-          <div className="grid grid-cols-[380px_1fr_260px] px-10 py-6 items-center bg-[#1fa97a]/20 border-b border-[#1fa97a]/40 shadow-inner">
+          <div className="grid grid-cols-[380px_1fr_260px] px-10 py-6 items-center bg-primary/15 border-b border-primary/40 shadow-inner">
             <div className="flex items-center gap-3">
-              <span className="font-extrabold text-[#1fa97a] text-[30px]">Total Per Active User</span>
+              <span className="font-extrabold text-primary text-[30px]">Total Per Active User</span>
             </div>
-            <div className="text-[22px] font-medium text-white/80">
+            <div className="text-[22px] font-medium text-foreground/80">
               Blended monthly recurring value per funded account
             </div>
-            <div className="text-right font-extrabold text-[#1fa97a] text-[40px] font-mono tracking-tight">
+            <div className="text-right font-extrabold text-primary text-[40px] font-mono tracking-tight">
               ₦1,067
             </div>
           </div>
 
           {/* B2B API Licensing Row */}
-          <div className="grid grid-cols-[380px_1fr_260px] px-10 py-5 items-center bg-white/[0.02]">
+          <div className="grid grid-cols-[380px_1fr_260px] px-10 py-5 items-center bg-muted/30">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#e0b04a]/10 border border-[#e0b04a]/30 flex items-center justify-center text-[#e0b04a]">
+              <div className="w-10 h-10 rounded-xl bg-paper/10 border border-paper/30 flex items-center justify-center text-paper">
                 <Cpu className="w-5 h-5" />
               </div>
-              <span className="font-bold text-white/70 text-[22px]">Later: B2B Data Licensing</span>
+              <span className="font-bold text-muted-foreground text-[22px]">Later: B2B Data Licensing</span>
             </div>
-            <div className="text-white/60 text-[20px]">
+            <div className="text-muted-foreground text-[20px]">
               Annual institutional API subscriptions at ~₦20M/client from Year 2
             </div>
-            <div className="text-right italic text-[#e0b04a] font-mono text-[20px]">
+            <div className="text-right italic text-paper font-mono text-[20px]">
               + ₦20M / Client / Yr
             </div>
           </div>
         </motion.div>
 
         {/* Footer */}
-        <div className="flex justify-between items-center text-[20px] text-[#1fa97a] tracking-wide pt-2">
+        <div className="flex justify-between items-center text-[20px] text-primary tracking-wide pt-2">
           <span>Base case preliminary. Sponsoring broker 50% split assumed.</span>
           <div>Liquidity Pro | Confidential</div>
         </div>

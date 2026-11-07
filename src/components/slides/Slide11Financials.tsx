@@ -23,10 +23,7 @@ export default function Slide11Financials() {
   const cashBalance = ["394.6", "287.9", "229.4", "242.6", "327.5"];
 
   return (
-    <div className="w-[1920px] h-[1080px] relative bg-[#0e1b2e] overflow-hidden select-none">
-      {/* Ambient Lighting */}
-      <div className="absolute -top-32 right-32 w-[650px] h-[650px] bg-[#1fa97a]/15 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute -bottom-32 left-32 w-[650px] h-[650px] bg-[#e0b04a]/12 rounded-full blur-[140px] pointer-events-none" />
+    <div className="w-[1920px] h-[1080px] relative bg-background text-foreground overflow-hidden select-none grid-floor">
 
       <div className="flex flex-col justify-between w-full h-full p-28 box-border relative z-10">
         {/* Header */}
@@ -36,18 +33,18 @@ export default function Slide11Financials() {
           transition={{ duration: 0.6 }}
           className="flex flex-col gap-4"
         >
-          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#1fa97a]/15 border border-[#1fa97a]/30 w-fit">
-            <Calculator className="w-4 h-4 text-[#1fa97a] animate-pulse" />
-            <span className="font-sans text-[16px] font-bold text-[#1fa97a] tracking-wider uppercase">
+          <div className="inline-flex items-center gap-2.5 px-3 py-1 rounded-md label-mono bg-primary/10 border border-primary/30 w-fit">
+            <Calculator className="w-4 h-4 text-primary animate-pulse" />
+            <span className="font-sans text-[16px] font-bold text-primary tracking-wider uppercase">
               FINANCIAL MODEL • 5-YEAR COMPREHENSIVE P&amp;L
             </span>
           </div>
 
-          <h2 className="font-sans text-[76px] font-extrabold leading-[1.05] text-[#f4f1ea] tracking-tight">
-            Financial <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1fa97a] via-[#e0b04a] to-[#f4f1ea]">projections.</span>
+          <h2 className="font-sans text-[76px] font-extrabold leading-[1.05] text-foreground tracking-tight">
+            Financial <span className="text-primary">projections.</span>
           </h2>
 
-          <p className="font-sans text-[26px] font-normal leading-snug text-[#f4f1ea]/70 max-w-[1250px]">
+          <p className="font-sans text-[26px] font-normal leading-snug text-muted-foreground max-w-[1250px]">
             Base case model under a ₦650M seed round. Spendable cash reserves never drop below ₦218M across the entire path to profitability.
           </p>
         </motion.div>
@@ -57,10 +54,10 @@ export default function Slide11Financials() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="my-auto bg-[#132238]/85 backdrop-blur-xl rounded-3xl border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden"
+          className="my-auto bg-card rounded-lg border border-border overflow-hidden"
         >
           {/* Table Header */}
-          <div className="grid grid-cols-[380px_repeat(5,1fr)] bg-white/5 px-10 py-4 border-b border-white/10 text-[18px] font-bold text-white/60 uppercase font-mono tracking-wider">
+          <div className="grid grid-cols-[380px_repeat(5,1fr)] bg-muted/40 px-10 py-4 border-b border-border text-[18px] font-bold text-muted-foreground uppercase font-mono tracking-wider">
             <div>Amounts in ₦ Millions</div>
             {years.map((y) => (
               <div key={y} className="text-right">{y}</div>
@@ -71,28 +68,28 @@ export default function Slide11Financials() {
           {revenueRows.map((r) => (
             <div
               key={r.name}
-              className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-2.5 items-center text-[21px] border-b border-white/5 text-[#f4f1ea]/80 hover:bg-white/[0.02] transition-colors"
+              className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-2.5 items-center text-[21px] border-b border-border/70 text-foreground/85 hover:bg-muted/40 transition-colors"
             >
               <div>{r.name}</div>
               {r.vals.map((v, i) => (
-                <div key={i} className="text-right font-mono font-medium text-white/90">{v}</div>
+                <div key={i} className="text-right font-mono font-medium text-foreground">{v}</div>
               ))}
             </div>
           ))}
 
           {/* Total Revenue Highlight Row */}
-          <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-3.5 items-center text-[23px] font-extrabold bg-[#1fa97a]/20 text-[#f4f1ea] border-b border-[#1fa97a]/40 shadow-inner">
-            <div className="text-[#1fa97a] flex items-center gap-2">
+          <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-3.5 items-center text-[23px] font-extrabold bg-primary/15 text-foreground border-b border-primary/40 shadow-inner">
+            <div className="text-primary flex items-center gap-2">
               <TrendingUp className="w-5 h-5" />
               <span>Total Revenue</span>
             </div>
             {totalRevenue.map((v, i) => (
-              <div key={i} className="text-right font-mono font-extrabold text-[#1fa97a] text-[25px]">{v}</div>
+              <div key={i} className="text-right font-mono font-extrabold text-primary text-[25px]">{v}</div>
             ))}
           </div>
 
           {/* Gross Profit */}
-          <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-2.5 items-center text-[21px] font-bold text-white/90 border-b border-white/5">
+          <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-2.5 items-center text-[21px] font-bold text-foreground border-b border-border/70">
             <div>Gross Profit</div>
             {grossProfit.map((v, i) => (
               <div key={i} className="text-right font-mono">{v}</div>
@@ -100,7 +97,7 @@ export default function Slide11Financials() {
           </div>
 
           {/* Payroll */}
-          <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-2.5 items-center text-[20px] text-white/60 border-b border-white/5">
+          <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-2.5 items-center text-[20px] text-muted-foreground border-b border-border/70">
             <div>Payroll (Scaling from 4 to 10 FTE)</div>
             {payroll.map((v, i) => (
               <div key={i} className="text-right font-mono">{v}</div>
@@ -108,7 +105,7 @@ export default function Slide11Financials() {
           </div>
 
           {/* Opex */}
-          <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-2.5 items-center text-[20px] text-white/60 border-b border-white/10">
+          <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-2.5 items-center text-[20px] text-muted-foreground border-b border-border">
             <div>Marketing, Cloud Infrastructure &amp; G&amp;A</div>
             {opex.map((v, i) => (
               <div key={i} className="text-right font-mono">{v}</div>
@@ -116,13 +113,13 @@ export default function Slide11Financials() {
           </div>
 
           {/* EBITDA Row */}
-          <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-3.5 items-center text-[24px] font-extrabold bg-white/5 border-b border-white/10">
+          <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-3.5 items-center text-[24px] font-extrabold bg-muted/40 border-b border-border">
             <div>EBITDA (Break-Even Month 41)</div>
             {ebitda.map((v, i) => (
               <div
                 key={i}
                 className={`text-right font-mono ${
-                  v.includes("(") ? "text-rose-400" : "text-[#1fa97a]"
+                  v.includes("(") ? "text-bear" : "text-primary"
                 }`}
               >
                 {v}
@@ -131,16 +128,16 @@ export default function Slide11Financials() {
           </div>
 
           {/* Spendable Cash Balance */}
-          <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-3.5 items-center text-[23px] font-bold bg-[#e0b04a]/15 text-[#f4f1ea]">
-            <div className="text-[#e0b04a] font-extrabold">Spendable Cash at Year End</div>
+          <div className="grid grid-cols-[380px_repeat(5,1fr)] px-10 py-3.5 items-center text-[23px] font-bold bg-paper/10 text-foreground">
+            <div className="text-paper font-extrabold">Spendable Cash at Year End</div>
             {cashBalance.map((v, i) => (
-              <div key={i} className="text-right font-mono font-extrabold text-[#e0b04a] text-[25px]">{v}</div>
+              <div key={i} className="text-right font-mono font-extrabold text-paper text-[25px]">{v}</div>
             ))}
           </div>
         </motion.div>
 
         {/* Footer */}
-        <div className="flex justify-between items-center text-[20px] text-[#1fa97a] tracking-wide pt-2">
+        <div className="flex justify-between items-center text-[20px] text-primary tracking-wide pt-2">
           <span>₦100M locked regulatory capital excluded from spendable cash. EBITDA turns positive in Month 41.</span>
           <div>Liquidity Pro | Confidential</div>
         </div>

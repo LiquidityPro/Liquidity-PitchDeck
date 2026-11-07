@@ -151,7 +151,7 @@ export default function DeckContainer() {
   return (
     <div
       ref={containerRef}
-      className="relative w-screen h-screen overflow-hidden bg-black flex items-center justify-center select-none"
+      className="relative w-screen h-screen overflow-hidden bg-background flex items-center justify-center select-none"
     >
       {/* Scaled Presentation Canvas */}
       <div

@@ -43,12 +43,12 @@ export default function DeckControls({
   onPrint,
 }: DeckControlsProps) {
   return (
-    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2 px-4 py-2 bg-[#0e1b2e]/90 hover:bg-[#0e1b2e] backdrop-blur-xl border border-white/20 rounded-full shadow-2xl text-white transition-all select-none">
+    <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-1 px-2 py-1.5 bg-card border border-border rounded-lg text-foreground select-none">
       {/* Prev */}
       <button
         onClick={onPrev}
         disabled={currentSlide === 1}
-        className="p-2 hover:bg-white/10 active:scale-95 disabled:opacity-30 disabled:pointer-events-none rounded-full transition-all cursor-pointer"
+        className="p-2 hover:bg-muted active:scale-95 disabled:opacity-30 disabled:pointer-events-none rounded-full transition-all cursor-pointer"
         title="Previous Slide (← / ↑)"
       >
         <ChevronLeft className="w-5 h-5" />
@@ -57,7 +57,7 @@ export default function DeckControls({
       {/* Slide Counter / Grid View Trigger */}
       <button
         onClick={onToggleOverview}
-        className="px-3 py-1 font-mono text-xs font-semibold tracking-wider hover:bg-white/10 rounded-full transition-colors cursor-pointer"
+        className="px-3 py-1 font-mono text-xs font-semibold tracking-wider hover:bg-muted rounded-full transition-colors cursor-pointer"
         title="Open Slide Grid (G)"
       >
         {currentSlide} / {totalSlides}
@@ -67,18 +67,18 @@ export default function DeckControls({
       <button
         onClick={onNext}
         disabled={currentSlide === totalSlides}
-        className="p-2 hover:bg-white/10 active:scale-95 disabled:opacity-30 disabled:pointer-events-none rounded-full transition-all cursor-pointer"
+        className="p-2 hover:bg-muted active:scale-95 disabled:opacity-30 disabled:pointer-events-none rounded-full transition-all cursor-pointer"
         title="Next Slide (→ / ↓ / Space)"
       >
         <ChevronRight className="w-5 h-5" />
       </button>
 
-      <div className="w-[1px] h-4 bg-white/20 mx-1" />
+      <div className="w-px h-4 bg-border mx-1" />
 
       {/* Slide Grid */}
       <button
         onClick={onToggleOverview}
-        className="p-2 hover:bg-white/10 rounded-full transition-colors cursor-pointer text-white/80 hover:text-white"
+        className="p-2 hover:bg-muted rounded-full transition-colors cursor-pointer text-foreground/80 hover:text-foreground"
         title="Slide Overview (G)"
       >
         <Grid className="w-4 h-4" />
@@ -89,8 +89,8 @@ export default function DeckControls({
         onClick={onToggleNotes}
         className={`p-2 rounded-full transition-colors cursor-pointer ${
           isNotesOpen
-            ? "bg-[#1fa97a] text-[#0e1b2e]"
-            : "hover:bg-white/10 text-white/80 hover:text-white"
+            ? "bg-primary text-primary-foreground"
+            : "hover:bg-muted text-foreground/80 hover:text-foreground"
         }`}
         title="Speaker Notes (S / N)"
       >
@@ -102,8 +102,8 @@ export default function DeckControls({
         onClick={onToggleAutoPlay}
         className={`p-2 rounded-full transition-colors cursor-pointer ${
           isAutoPlay
-            ? "bg-[#e0b04a] text-[#0e1b2e]"
-            : "hover:bg-white/10 text-white/80 hover:text-white"
+            ? "bg-paper text-primary-foreground"
+            : "hover:bg-muted text-foreground/80 hover:text-foreground"
         }`}
         title={isAutoPlay ? "Pause Auto-play" : "Auto-play Slides"}
       >
@@ -113,7 +113,7 @@ export default function DeckControls({
       {/* Fullscreen */}
       <button
         onClick={onToggleFullscreen}
-        className="p-2 hover:bg-white/10 rounded-full transition-colors cursor-pointer text-white/80 hover:text-white"
+        className="p-2 hover:bg-muted rounded-full transition-colors cursor-pointer text-foreground/80 hover:text-foreground"
         title="Fullscreen (F)"
       >
         {isFullscreen ? (
@@ -126,7 +126,7 @@ export default function DeckControls({
       {/* Print */}
       <button
         onClick={onPrint}
-        className="p-2 hover:bg-white/10 rounded-full transition-colors cursor-pointer text-white/80 hover:text-white"
+        className="p-2 hover:bg-muted rounded-full transition-colors cursor-pointer text-foreground/80 hover:text-foreground"
         title="Print Deck (Ctrl + P)"
       >
         <Printer className="w-4 h-4" />
